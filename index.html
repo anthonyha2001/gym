@@ -221,81 +221,6 @@
 
   input[type=number]::-webkit-outer-spin-button,input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none;margin:0;}
   input[type=number]{-moz-appearance:textfield;}
-
-  .badge.plateau{background:var(--danger-dim);color:var(--danger);}
-  .warmup-line{font-size:10.5px;color:var(--text-dimmer);margin-top:3px;font-variant-numeric:tabular-nums;}
-
-  .coach-banner{border-radius:12px;padding:10px 12px;font-size:12.5px;line-height:1.4;
-    display:flex;justify-content:space-between;align-items:center;gap:10px;margin:10px 0;}
-  .coach-banner.warn{background:var(--amber-dim);color:var(--amber);}
-  .coach-banner.good{background:var(--green-dim);color:var(--green);}
-  .coach-banner.info{background:var(--accent-dim);color:var(--accent);}
-  .coach-banner.deload{background:var(--danger-dim);color:var(--danger);}
-  .coach-banner button{background:none;border:1px solid currentColor;color:inherit;padding:7px 11px;
-    border-radius:8px;font-size:10.5px;font-weight:800;cursor:pointer;white-space:nowrap;
-    text-transform:uppercase;letter-spacing:0.3px;font-family:var(--font-display);flex:0 0 auto;}
-
-  .opt-row{display:flex;gap:6px;margin-bottom:2px;}
-  .opt-btn{flex:1;padding:9px 0;border-radius:9px;border:1px solid var(--border);background:var(--card2);
-    color:var(--text-dim);font-weight:700;font-size:13px;cursor:pointer;}
-  .opt-btn.selected{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);}
-
-  .vol-row{margin-bottom:14px;}
-  .vol-label{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;font-weight:700;margin-bottom:5px;gap:8px;flex-wrap:wrap;}
-  .vol-label .vol-count{font-size:10.5px;font-weight:600;color:var(--text-dim);}
-  .vol-track{position:relative;height:10px;background:var(--card2);border-radius:6px;overflow:hidden;border:1px solid var(--border);}
-  .vol-zone-mav{position:absolute;top:0;bottom:0;background:color-mix(in srgb, var(--green) 18%, transparent);}
-  .vol-fill{position:absolute;top:0;left:0;bottom:0;border-radius:6px;transition:width .3s;}
-  .vol-fill.under{background:var(--amber);}
-  .vol-fill.ok{background:var(--green);}
-  .vol-fill.over{background:var(--danger);}
-  .vol-marker{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--text-dimmer);}
-
-  .day-nav{display:flex;align-items:center;justify-content:space-between;margin:10px 0 14px;}
-  .day-nav button{background:var(--card);border:1px solid var(--border);color:var(--text);width:34px;height:34px;
-    border-radius:10px;font-size:16px;cursor:pointer;flex:0 0 auto;}
-  .day-nav .day-label{font-family:var(--font-display);font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:0.4px;}
-
-  .pbar-row{margin-bottom:12px;}
-  .pbar-row:last-of-type{margin-bottom:0;}
-  .pbar-label{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;font-weight:700;margin-bottom:5px;}
-  .pbar-label .sub{font-weight:600;color:var(--text-dim);font-size:11px;font-variant-numeric:tabular-nums;}
-  .pbar-track{height:9px;background:var(--card2);border-radius:6px;overflow:hidden;border:1px solid var(--border);}
-  .pbar-fill{height:100%;border-radius:6px;transition:width .3s;}
-  .pbar-fill.cal{background:var(--accent);}
-  .pbar-fill.protein{background:var(--green);}
-  .pbar-fill.carbs{background:var(--full);}
-  .pbar-fill.fat{background:var(--amber);}
-  .pbar-fill.water{background:var(--pull);}
-
-  .water-row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);}
-  .water-btns{display:flex;gap:6px;}
-  .water-btns button{background:var(--card2);border:1px solid var(--border);color:var(--text);padding:7px 10px;
-    border-radius:8px;font-size:11.5px;font-weight:700;cursor:pointer;}
-
-  .meal-card{margin-bottom:12px;}
-  .meal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px;}
-  .meal-head .name{font-family:var(--font-display);font-size:13px;text-transform:uppercase;letter-spacing:0.5px;color:var(--text-dim);font-weight:700;}
-  .meal-head .kcal{font-size:12px;font-weight:700;color:var(--text-dim);font-variant-numeric:tabular-nums;}
-  .meal-entry{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);gap:8px;}
-  .meal-entry:last-of-type{border-bottom:none;}
-  .meal-entry .info{min-width:0;}
-  .meal-entry .info .name{font-size:13.5px;font-weight:700;color:var(--text);}
-  .meal-entry .info .meta{font-size:10.5px;color:var(--text-dim);margin-top:1px;}
-  .meal-entry .right{display:flex;align-items:center;flex:0 0 auto;}
-  .meal-entry .kcal-val{font-size:13px;font-weight:700;color:var(--text-dim);margin-right:4px;font-variant-numeric:tabular-nums;}
-  .meal-add{width:100%;background:var(--card2);border:1px dashed var(--border);color:var(--text-dim);
-    padding:10px;border-radius:10px;font-size:12.5px;font-weight:700;cursor:pointer;margin-top:6px;}
-
-  .food-row{display:flex;align-items:center;gap:8px;padding:10px 2px;border-bottom:1px solid var(--border);}
-  .food-row:last-child{border-bottom:none;}
-  .food-row-info{flex:1;min-width:0;}
-  .food-row-name{font-size:13.5px;font-weight:700;}
-  .food-row-meta{font-size:10.5px;color:var(--text-dim);margin-top:1px;}
-  .food-qty{width:50px;flex:0 0 auto;background:var(--card2);border:1px solid var(--border);border-radius:8px;
-    color:var(--text);text-align:center;padding:7px 2px;font-size:13px;font-weight:700;}
-  .food-add-btn{flex:0 0 auto;background:var(--accent);color:var(--accent-ink);border:none;padding:8px 12px;
-    border-radius:8px;font-size:11.5px;font-weight:800;cursor:pointer;}
 </style>
 </head>
 <body>
@@ -311,7 +236,6 @@
 
     <!-- WORKOUT VIEW -->
     <section class="view active" id="view-workout">
-      <div id="coachBanner"></div>
       <div class="daychips" id="dayChips"></div>
       <div id="timerCard"></div>
       <div id="workoutBody"></div>
@@ -328,30 +252,9 @@
     <!-- PROGRESS VIEW -->
     <section class="view" id="view-progress">
       <div class="stat-grid" id="statGrid"></div>
-      <h2 class="section-title">Coach Insights</h2>
-      <div id="insightsList"></div>
-      <h2 class="section-title">Muscle Volume (7-day)</h2>
-      <div class="card" id="volumeBars"></div>
       <h2 class="section-title">Progressive Overload</h2>
       <select id="progExSelect" style="margin-bottom:14px;"></select>
       <div id="progressBody"></div>
-    </section>
-
-    <!-- FOOD VIEW -->
-    <section class="view" id="view-food">
-      <div id="foodDateNav"></div>
-      <div id="foodSummary"></div>
-      <h2 class="section-title">Meals</h2>
-      <div id="foodMeals"></div>
-      <h2 class="section-title">7-Day Trend</h2>
-      <div class="card prog-card">
-        <div class="prog-head"><div class="name">Calories</div></div>
-        <canvas class="chart" id="foodTrendCal"></canvas>
-      </div>
-      <div class="card prog-card">
-        <div class="prog-head"><div class="name">Protein (g)</div></div>
-        <canvas class="chart" id="foodTrendProtein"></canvas>
-      </div>
     </section>
 
     <!-- SETTINGS VIEW -->
@@ -370,19 +273,6 @@
         <input class="field" type="number" step="0.5" id="incUpper" style="margin-top:6px;margin-bottom:12px;">
         <label style="font-size:11.5px;color:var(--text-dim);font-weight:700;">Lower body weight jump (kg)</label>
         <input class="field" type="number" step="0.5" id="incLower" style="margin-top:6px;">
-      </div>
-      <h2 class="section-title">Nutrition Goals</h2>
-      <div class="card">
-        <label style="font-size:11.5px;color:var(--text-dim);font-weight:700;">Calories (kcal/day)</label>
-        <input class="field" type="number" step="10" id="goalCal" style="margin-top:6px;margin-bottom:12px;">
-        <label style="font-size:11.5px;color:var(--text-dim);font-weight:700;">Protein (g/day)</label>
-        <input class="field" type="number" step="5" id="goalProtein" style="margin-top:6px;margin-bottom:12px;">
-        <label style="font-size:11.5px;color:var(--text-dim);font-weight:700;">Carbs (g/day)</label>
-        <input class="field" type="number" step="5" id="goalCarbs" style="margin-top:6px;margin-bottom:12px;">
-        <label style="font-size:11.5px;color:var(--text-dim);font-weight:700;">Fat (g/day)</label>
-        <input class="field" type="number" step="5" id="goalFat" style="margin-top:6px;margin-bottom:12px;">
-        <label style="font-size:11.5px;color:var(--text-dim);font-weight:700;">Water (ml/day)</label>
-        <input class="field" type="number" step="100" id="goalWater" style="margin-top:6px;">
       </div>
       <h2 class="section-title">Data</h2>
       <div class="card">
@@ -409,10 +299,6 @@
     <button class="tab-btn" data-view="progress">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 3v18h18M7 15l4-5 3 3 5-7"/></svg>
       Progress
-    </button>
-    <button class="tab-btn" data-view="food">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2v7a2 2 0 0 0 2 2v11M7 2v7M11 2v7M4 2v7M17 2c-1.7 0-3 2-3 5s1.3 5 3 5v10"/></svg>
-      Food
     </button>
     <button class="tab-btn" data-view="settings">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
@@ -450,74 +336,41 @@ const TYPE_LABEL = { push:"Push Day", pull:"Pull Day", legs:"Leg Day", full:"Wea
 const TYPE_COLOR = { push:"var(--push)", pull:"var(--pull)", legs:"var(--legs)", full:"var(--full)" };
 const LOWER_KEYWORDS = ["squat","deadlift","leg","calf","lunge","hip thrust","glute","good morning"];
 
-const MUSCLE_LABEL = { chest:"Chest", back:"Back", shoulders:"Shoulders", rear_delts:"Rear Delts",
-  biceps:"Biceps", triceps:"Triceps", quads:"Quads", hamstrings:"Hamstrings", glutes:"Glutes", calves:"Calves" };
-
-// Weekly working-set landmarks per muscle group (MEV = minimum effective volume,
-// MAV = maximum adaptive volume, MRV = maximum recoverable volume). Ballpark hypertrophy literature figures.
-const VOLUME_LANDMARKS = {
-  chest:{mev:8,mav:14,mrv:20}, back:{mev:10,mav:16,mrv:22}, shoulders:{mev:8,mav:14,mrv:20},
-  rear_delts:{mev:6,mav:12,mrv:18}, biceps:{mev:6,mav:12,mrv:20}, triceps:{mev:6,mav:12,mrv:18},
-  quads:{mev:8,mav:14,mrv:20}, hamstrings:{mev:6,mav:10,mrv:16}, glutes:{mev:4,mav:10,mrv:16}, calves:{mev:8,mav:14,mrv:20},
-};
-
-// Built-in substitution pool, keyed by muscle group, for the "Swap" button (injury / equipment / boredom).
-const ALT_EXERCISES = {
-  chest: [ {name:"Push-Up", sets:3, repRange:[10,20], startWeight:0}, {name:"Cable Chest Fly", sets:3, repRange:[10,15], startWeight:10},
-    {name:"Machine Chest Press", sets:3, repRange:[8,12], startWeight:20}, {name:"Dumbbell Bench Press", sets:4, repRange:[6,10], startWeight:14} ],
-  back: [ {name:"Single-Arm Dumbbell Row", sets:3, repRange:[8,12], startWeight:16}, {name:"Assisted Pull-Up", sets:3, repRange:[6,10], startWeight:0},
-    {name:"T-Bar Row", sets:3, repRange:[8,12], startWeight:20}, {name:"Straight-Arm Pulldown", sets:3, repRange:[10,15], startWeight:12} ],
-  shoulders: [ {name:"Machine Shoulder Press", sets:3, repRange:[8,12], startWeight:15}, {name:"Arnold Press", sets:3, repRange:[8,12], startWeight:10},
-    {name:"Cable Lateral Raise", sets:3, repRange:[12,15], startWeight:5} ],
-  rear_delts: [ {name:"Reverse Pec Deck", sets:3, repRange:[12,15], startWeight:15}, {name:"Band Pull-Apart", sets:3, repRange:[15,20], startWeight:0} ],
-  biceps: [ {name:"Cable Curl", sets:3, repRange:[10,15], startWeight:10}, {name:"Incline Dumbbell Curl", sets:3, repRange:[8,12], startWeight:8},
-    {name:"Preacher Curl", sets:3, repRange:[8,12], startWeight:10} ],
-  triceps: [ {name:"Close-Grip Bench Press", sets:3, repRange:[6,10], startWeight:30}, {name:"Skull Crusher", sets:3, repRange:[8,12], startWeight:15},
-    {name:"Rope Overhead Extension", sets:3, repRange:[10,15], startWeight:12} ],
-  quads: [ {name:"Front Squat", sets:3, repRange:[6,10], startWeight:30}, {name:"Hack Squat", sets:3, repRange:[8,12], startWeight:40},
-    {name:"Walking Lunge", sets:3, repRange:[10,12], startWeight:10}, {name:"Goblet Squat", sets:3, repRange:[10,15], startWeight:16} ],
-  hamstrings: [ {name:"Romanian Deadlift", sets:3, repRange:[8,12], startWeight:30}, {name:"Seated Leg Curl", sets:3, repRange:[10,15], startWeight:20},
-    {name:"Nordic Curl", sets:3, repRange:[6,10], startWeight:0} ],
-  glutes: [ {name:"Cable Kickback", sets:3, repRange:[12,15], startWeight:10}, {name:"Glute Bridge", sets:3, repRange:[12,15], startWeight:20},
-    {name:"Step-Up", sets:3, repRange:[10,12], startWeight:10} ],
-  calves: [ {name:"Seated Calf Raise", sets:3, repRange:[12,20], startWeight:20}, {name:"Leg Press Calf Raise", sets:3, repRange:[15,20], startWeight:40} ],
-};
-
-// v3: adds a `muscle` group tag to every built-in exercise, powering volume landmarks,
-// substitution suggestions, and per-muscle coaching insights.
-const PROGRAM_VERSION = 3;
+// v2: maximized-hypertrophy split — ~18-20 working sets/day, every major muscle hit 2x/week,
+// no deadlift variants (Hip Thrust + Good Morning cover the posterior chain instead).
+const PROGRAM_VERSION = 2;
 const DEFAULT_PROGRAM = {
   push: [
-    {name:"Barbell Bench Press", sets:4, repRange:[6,10], startWeight:40, muscle:"chest"},
-    {name:"Incline Dumbbell Press", sets:3, repRange:[8,12], startWeight:16, muscle:"chest"},
-    {name:"Overhead Press", sets:3, repRange:[6,10], startWeight:25, muscle:"shoulders"},
-    {name:"Lateral Raise", sets:4, repRange:[12,15], startWeight:6, muscle:"shoulders"},
-    {name:"Cable Tricep Pushdown", sets:3, repRange:[10,15], startWeight:20, muscle:"triceps"},
-    {name:"Overhead Tricep Extension", sets:3, repRange:[10,15], startWeight:12, muscle:"triceps"},
+    {name:"Barbell Bench Press", sets:4, repRange:[6,10], startWeight:40},
+    {name:"Incline Dumbbell Press", sets:3, repRange:[8,12], startWeight:16},
+    {name:"Overhead Press", sets:3, repRange:[6,10], startWeight:25},
+    {name:"Lateral Raise", sets:4, repRange:[12,15], startWeight:6},
+    {name:"Cable Tricep Pushdown", sets:3, repRange:[10,15], startWeight:20},
+    {name:"Overhead Tricep Extension", sets:3, repRange:[10,15], startWeight:12},
   ],
   pull: [
-    {name:"Pendlay Row", sets:4, repRange:[6,10], startWeight:35, muscle:"back"},
-    {name:"Lat Pulldown", sets:3, repRange:[8,12], startWeight:35, muscle:"back"},
-    {name:"Seated Cable Row", sets:3, repRange:[10,12], startWeight:30, muscle:"back"},
-    {name:"Face Pull", sets:3, repRange:[12,15], startWeight:12, muscle:"rear_delts"},
-    {name:"Barbell Bicep Curl", sets:3, repRange:[8,12], startWeight:15, muscle:"biceps"},
-    {name:"Hammer Curl", sets:3, repRange:[10,15], startWeight:8, muscle:"biceps"},
+    {name:"Pendlay Row", sets:4, repRange:[6,10], startWeight:35},
+    {name:"Lat Pulldown", sets:3, repRange:[8,12], startWeight:35},
+    {name:"Seated Cable Row", sets:3, repRange:[10,12], startWeight:30},
+    {name:"Face Pull", sets:3, repRange:[12,15], startWeight:12},
+    {name:"Barbell Bicep Curl", sets:3, repRange:[8,12], startWeight:15},
+    {name:"Hammer Curl", sets:3, repRange:[10,15], startWeight:8},
   ],
   legs: [
-    {name:"Back Squat", sets:4, repRange:[5,8], startWeight:50, muscle:"quads"},
-    {name:"Leg Press", sets:3, repRange:[10,15], startWeight:80, muscle:"quads"},
-    {name:"Hip Thrust", sets:3, repRange:[8,12], startWeight:40, muscle:"glutes"},
-    {name:"Leg Curl", sets:3, repRange:[10,15], startWeight:20, muscle:"hamstrings"},
-    {name:"Bulgarian Split Squat", sets:3, repRange:[10,12], startWeight:12, muscle:"quads"},
-    {name:"Standing Calf Raise", sets:4, repRange:[12,20], startWeight:30, muscle:"calves"},
+    {name:"Back Squat", sets:4, repRange:[5,8], startWeight:50},
+    {name:"Leg Press", sets:3, repRange:[10,15], startWeight:80},
+    {name:"Hip Thrust", sets:3, repRange:[8,12], startWeight:40},
+    {name:"Leg Curl", sets:3, repRange:[10,15], startWeight:20},
+    {name:"Bulgarian Split Squat", sets:3, repRange:[10,12], startWeight:12},
+    {name:"Standing Calf Raise", sets:4, repRange:[12,20], startWeight:30},
   ],
   full: [
-    {name:"Leg Extension", sets:3, repRange:[12,15], startWeight:20, muscle:"quads"},
-    {name:"Good Morning", sets:3, repRange:[10,12], startWeight:20, muscle:"hamstrings"},
-    {name:"Weighted Dip", sets:3, repRange:[8,12], startWeight:0, muscle:"chest"},
-    {name:"Chest-Supported Row", sets:3, repRange:[10,12], startWeight:20, muscle:"back"},
-    {name:"Rear Delt Fly", sets:3, repRange:[12,15], startWeight:6, muscle:"rear_delts"},
-    {name:"Standing Calf Raise", sets:3, repRange:[15,20], startWeight:30, muscle:"calves"},
+    {name:"Leg Extension", sets:3, repRange:[12,15], startWeight:20},
+    {name:"Good Morning", sets:3, repRange:[10,12], startWeight:20},
+    {name:"Weighted Dip", sets:3, repRange:[8,12], startWeight:0},
+    {name:"Chest-Supported Row", sets:3, repRange:[10,12], startWeight:20},
+    {name:"Rear Delt Fly", sets:3, repRange:[12,15], startWeight:6},
+    {name:"Standing Calf Raise", sets:3, repRange:[15,20], startWeight:30},
   ],
 };
 
@@ -531,139 +384,6 @@ function restSecondsFor(progEx){
   return 60;
 }
 
-// Epley formula: estimates a one-rep max from any logged set, so progress can be tracked
-// even when reps/weight trade off against each other session to session.
-function epley1RM(weight, reps){
-  if(!reps || reps<=0) return 0;
-  return (weight||0) * (1 + reps/30);
-}
-function roundToIncrement(w, progEx){
-  if(progEx.isTimed) return Math.round(w/5)*5;
-  return Math.round(w*2)/2; // nearest 0.5kg plate jump
-}
-function warmupSets(target){
-  return [{pct:0.4,reps:8},{pct:0.6,reps:5},{pct:0.8,reps:3}]
-    .map(s=>({weight: Math.round((target*s.pct)/2.5)*2.5, reps:s.reps}))
-    .filter(w=>w.weight>0 && w.weight<target);
-}
-
-/* ---------------- Food database ---------------- */
-const MEAL_TYPES = ["breakfast","lunch","dinner","snack"];
-const MEAL_LABEL = { breakfast:"Breakfast", lunch:"Lunch", dinner:"Dinner", snack:"Snacks" };
-
-// [id, name, category, serving label, calories, protein g, carbs g, fat g] — per the listed serving.
-// Heavy on Lebanese staples per request, plus a wide spread of common everyday foods.
-const FOOD_DB = [
-  ["hummus","Hummus","lebanese","2 tbsp (30g)",70,2,6,5],
-  ["baba_ghanouj","Baba Ghanouj (Moutabal)","lebanese","2 tbsp (30g)",35,1,3,2.5],
-  ["tabbouleh","Tabbouleh","lebanese","1 cup (100g)",120,3,15,6],
-  ["fattoush","Fattoush","lebanese","1.5 cups (150g)",150,3,14,9],
-  ["kibbeh_fried","Kibbeh (fried)","lebanese","1 piece (80g)",210,10,15,12],
-  ["kibbeh_nayyeh","Kibbeh Nayyeh","lebanese","100g",180,15,10,9],
-  ["shish_taouk","Shish Taouk","lebanese","1 skewer (120g)",220,30,2,10],
-  ["kafta","Kafta (grilled)","lebanese","100g",250,20,2,18],
-  ["shawarma_chicken","Chicken Shawarma Wrap","lebanese","1 wrap (250g)",480,28,45,20],
-  ["shawarma_beef","Beef Shawarma Wrap","lebanese","1 wrap (250g)",520,26,42,26],
-  ["manakish_zaatar","Manakish Za'atar","lebanese","1 piece (120g)",320,7,45,13],
-  ["manakish_cheese","Manakish Cheese","lebanese","1 piece (130g)",380,14,42,17],
-  ["manakish_akkawi","Manakish Akkawi Cheese","lebanese","1 piece (130g)",360,15,40,15],
-  ["lahm_bi_ajeen","Lahm bi Ajeen","lebanese","1 piece (60g)",150,8,15,7],
-  ["sfeeha","Sfiha (Baalbaki)","lebanese","1 piece (70g)",180,9,16,9],
-  ["foul","Foul Medammes","lebanese","1 cup (170g)",190,11,30,3],
-  ["moujadara","Moujadara (lentils & rice)","lebanese","1 cup (200g)",250,9,40,7],
-  ["warak_enab","Warak Enab (stuffed grape leaves)","lebanese","4 pieces (120g)",160,3,25,6],
-  ["labneh","Labneh","lebanese","2 tbsp (30g)",45,2,2,3.5],
-  ["pita","Pita Bread","lebanese","1 piece (60g)",165,5.5,33,1],
-  ["zaatar_mix","Za'atar Spice Mix","lebanese","1 tbsp (10g)",45,1.5,5,2.5],
-  ["baklava","Baklava","lebanese","1 piece (40g)",180,3,18,11],
-  ["knafeh","Knafeh","lebanese","1 slice (120g)",350,8,40,17],
-  ["falafel","Falafel","lebanese","3 pieces (90g)",220,8,20,12],
-  ["toum","Toum (garlic sauce)","lebanese","1 tbsp (15g)",90,0.2,1,10],
-  ["rice_vermicelli","Rice Pilaf w/ Vermicelli","lebanese","1 cup (150g)",220,4,42,4],
-  ["chicken_freekeh","Chicken Freekeh","lebanese","1 cup (200g)",280,18,35,8],
-  ["lentil_soup","Lentil Soup (Shorbat Adas)","lebanese","1 cup (240g)",180,11,28,3],
-  ["batata_harra","Batata Harra","lebanese","1 cup (150g)",220,3,28,11],
-  ["sambousek","Sambousek","lebanese","2 pieces (80g)",230,6,22,14],
-  ["khyar_laban","Cucumber Yogurt Salad","lebanese","1 cup (150g)",90,5,8,4],
-  ["halloumi","Halloumi (grilled)","lebanese","100g",320,22,2,25],
-  ["loubieh","Loubieh bi Zeit (green beans)","lebanese","1 cup (180g)",150,4,15,9],
-  ["kaak","Ka'ak (sesame bread)","lebanese","1 piece (80g)",240,7,42,5],
-  ["ayran","Ayran (yogurt drink)","lebanese","1 cup (250ml)",90,5,7,4],
-  ["olives","Lebanese Olives","lebanese","10 pieces (30g)",60,0.5,2,6],
-  ["olive_oil","Olive Oil","lebanese","1 tbsp (14g)",120,0,0,14],
-
-  ["chicken_breast","Chicken Breast (cooked)","common","100g",165,31,0,3.6],
-  ["salmon","Salmon (grilled)","common","100g",208,20,0,13],
-  ["ground_beef","Ground Beef 90/10","common","100g",176,20,0,10],
-  ["egg","Egg (large)","common","1 egg (50g)",72,6,0.4,5],
-  ["egg_white","Egg Whites","common","100g",52,11,0.7,0.2],
-  ["turkey_breast","Turkey Breast","common","100g",135,30,0,1],
-  ["tuna","Tuna (canned, water)","common","100g",116,26,0,0.8],
-  ["shrimp","Shrimp (cooked)","common","100g",99,24,0.2,0.3],
-  ["tofu","Tofu","common","100g",76,8,1.9,4.8],
-  ["greek_yogurt","Greek Yogurt (plain)","common","170g",100,17,6,0.7],
-  ["cottage_cheese","Cottage Cheese","common","100g",98,11,3.4,4.3],
-  ["whey_protein","Whey Protein (1 scoop)","common","30g",120,24,3,1.5],
-  ["steak","Beef Steak (sirloin)","common","100g",206,29,0,9],
-  ["pork_chop","Pork Chop (grilled)","common","100g",231,25,0,14],
-  ["bacon","Bacon","common","2 slices (16g)",90,6,0.3,7],
-
-  ["white_rice","White Rice (cooked)","common","1 cup (158g)",205,4.3,45,0.4],
-  ["brown_rice","Brown Rice (cooked)","common","1 cup (195g)",216,5,45,1.8],
-  ["oats","Oats (dry)","common","40g",150,5,27,3],
-  ["whole_wheat_bread","Whole Wheat Bread","common","1 slice (28g)",70,4,12,1],
-  ["white_bread","White Bread","common","1 slice (28g)",75,2.5,14,1],
-  ["sweet_potato","Sweet Potato (baked)","common","1 medium (130g)",112,2,26,0.1],
-  ["potato","Potato (baked)","common","1 medium (170g)",160,4,37,0.2],
-  ["pasta","Pasta (cooked)","common","1 cup (140g)",220,8,43,1.3],
-  ["quinoa","Quinoa (cooked)","common","1 cup (185g)",222,8,39,3.6],
-  ["bagel","Bagel","common","1 medium (95g)",245,10,48,1.5],
-  ["tortilla","Flour Tortilla","common","1 medium (45g)",140,4,24,3.5],
-
-  ["banana","Banana","common","1 medium (118g)",105,1.3,27,0.4],
-  ["apple","Apple","common","1 medium (182g)",95,0.5,25,0.3],
-  ["orange","Orange","common","1 medium (131g)",62,1.2,15,0.2],
-  ["strawberries","Strawberries","common","1 cup (152g)",49,1,12,0.5],
-  ["blueberries","Blueberries","common","1 cup (148g)",84,1.1,21,0.5],
-  ["broccoli","Broccoli (steamed)","common","1 cup (91g)",31,2.5,6,0.3],
-  ["spinach","Spinach (raw)","common","1 cup (30g)",7,0.9,1.1,0.1],
-  ["tomato","Tomato","common","1 medium (123g)",22,1.1,4.8,0.2],
-  ["cucumber","Cucumber","common","1 cup (104g)",16,0.7,3.8,0.1],
-  ["avocado","Avocado","common","1/2 fruit (100g)",160,2,9,15],
-  ["mixed_salad","Mixed Green Salad","common","2 cups (100g)",20,1.5,4,0.2],
-
-  ["almonds","Almonds","common","28g (~23 pcs)",164,6,6,14],
-  ["walnuts","Walnuts","common","28g",185,4.3,3.9,18.5],
-  ["peanut_butter","Peanut Butter","common","2 tbsp (32g)",190,8,6,16],
-  ["cashews","Cashews","common","28g",157,5.2,8.6,12.4],
-
-  ["milk_whole","Milk (whole)","common","1 cup (244g)",149,8,12,8],
-  ["milk_skim","Milk (skim)","common","1 cup (245g)",83,8,12,0.2],
-  ["cheddar","Cheddar Cheese","common","28g",113,7,0.4,9.3],
-  ["mozzarella","Mozzarella","common","28g",85,6.3,0.6,6.3],
-  ["butter","Butter","common","1 tbsp (14g)",102,0.1,0,11.5],
-
-  ["cheeseburger","Cheeseburger","common","1 burger (150g)",300,17,33,12],
-  ["pizza_slice","Pizza (cheese, 1 slice)","common","107g",285,12,36,10],
-  ["fries","French Fries (medium)","common","117g",365,4,48,17],
-  ["chicken_sandwich","Grilled Chicken Sandwich","common","1 sandwich (230g)",380,34,38,9],
-  ["caesar_salad_chicken","Caesar Salad w/ Chicken","common","1 bowl (350g)",350,30,12,20],
-  ["sushi_roll","Sushi Roll (California, 8pc)","common","1 roll (200g)",260,9,38,7],
-  ["ramen","Ramen (bowl)","common","1 bowl (400g)",450,18,60,15],
-
-  ["coffee_black","Coffee (black)","common","1 cup (240ml)",2,0.3,0,0],
-  ["orange_juice","Orange Juice","common","1 cup (248g)",110,1.7,26,0.5],
-  ["soda","Soda (regular)","common","1 can (355ml)",140,0,39,0],
-  ["protein_shake","Protein Shake (premade)","common","1 bottle (325ml)",160,30,5,3],
-  ["beer","Beer (regular)","common","1 can (355ml)",150,1.6,13,0],
-
-  ["dark_chocolate","Dark Chocolate","common","1oz (28g)",170,2,13,12],
-  ["granola_bar","Granola Bar","common","1 bar (35g)",140,3,20,6],
-  ["rice_cake","Rice Cake","common","1 piece (9g)",35,0.7,7,0.3],
-  ["popcorn","Popcorn (air-popped)","common","3 cups (24g)",90,3,19,1],
-  ["potato_chips","Potato Chips","common","1oz (28g)",150,2,15,10],
-].map(([id,name,cat,serving,cal,p,c,f])=>({id,name,cat,serving,cal,p,c,f}));
-
 /* ---------------- State / Storage ---------------- */
 const LS_KEY = "ironlog_v1";
 let state = loadState();
@@ -675,14 +395,7 @@ function defaultState(){
     bodyweight: [],
     settings: { incUpper: 2.5, incLower: 5 },
     draft: {},
-    activeSession: null, // { day, type, startTs, accumMs, running, readiness }
-    prs: {}, // { [exerciseName]: { bestWeight:{value,date}, bestE1RM:{value,date}, bestVolume:{value,date} } }
-    deload: { active: false, startDate: null },
-    lastDeloadDate: null,
-    nutrition: {
-      goals: { calories: 2200, protein: 150, carbs: 220, fat: 70, water: 2500 },
-      log: {} // { 'YYYY-MM-DD': { water: ml, meals: { breakfast:[], lunch:[], dinner:[], snack:[] } } }
-    },
+    activeSession: null, // { day, type, startTs, accumMs, running }
     programVersion: PROGRAM_VERSION
   };
 }
@@ -746,105 +459,29 @@ function lastLoggedSets(exName){
   return null;
 }
 
-// Up to `limit` most recent sessions that logged this exercise, oldest-first.
-function exerciseHistory(exName, limit){
-  const out = [];
-  for(let i=state.sessions.length-1;i>=0 && out.length<limit;i--){
-    const s = state.sessions[i];
-    const ex = s.exercises.find(e=>e.name===exName);
-    if(ex && ex.sets.some(st=>st.reps!=null && st.weight!=null)) out.unshift({session:s, ex});
-  }
-  return out;
-}
-function bestE1RMInSets(sets){
-  let best = 0;
-  sets.forEach(s=>{ if(s.reps>0){ const e = epley1RM(s.weight, s.reps); if(e>best) best=e; } });
-  return best;
-}
-function avgRPE(sets){
-  const vals = sets.filter(s=>s.rpe!=null).map(s=>s.rpe);
-  if(!vals.length) return null;
-  return vals.reduce((a,b)=>a+b,0)/vals.length;
-}
-// Flags a lift as stalled: best estimated 1RM across the last 3-4 sessions hasn't
-// meaningfully grown (within 1%), which is the trigger for a deload/variation suggestion.
-function detectPlateau(exName){
-  const hist = exerciseHistory(exName, 4);
-  if(hist.length<3) return false;
-  const e1s = hist.map(h=>bestE1RMInSets(h.ex.sets));
-  const first = e1s[0];
-  if(first<=0) return false;
-  const growth = (e1s[e1s.length-1]-first)/first;
-  return growth <= 0.01;
-}
-
 function getSuggestion(progEx){
   const last = lastLoggedSets(progEx.name);
-  const plateaued = last ? detectPlateau(progEx.name) : false;
-  const deloadOn = !!(state.deload && state.deload.active);
-  const readiness = (state.activeSession && state.activeSession.day===currentDay) ? state.activeSession.readiness : null;
-  const notes = [];
-
-  function applyModifiers(weight){
-    let w = weight;
-    if(deloadOn){ w *= 0.9; notes.push('Deload week: -10%'); }
-    if(readiness && readiness.mult && readiness.mult!==1){
-      w *= readiness.mult;
-      notes.push(`Low readiness: -${Math.round((1-readiness.mult)*100)}%`);
-    }
-    return roundToIncrement(w, progEx);
-  }
-
-  if(!last){
-    notes.push('First time logging this move');
-    return {weight: applyModifiers(progEx.startWeight), badge:'new', note: notes.join(' · '), plateaued:false};
-  }
+  if(!last) return {weight: progEx.startWeight, badge:'new', note:'First time logging this move'};
   const {ex} = last;
   const [lo,hi] = progEx.repRange;
   const loggedSets = ex.sets.filter(s=>s.reps!=null);
-  if(loggedSets.length===0){
-    notes.push('No data yet');
-    return {weight: applyModifiers(progEx.startWeight), badge:'new', note: notes.join(' · '), plateaued:false};
-  }
-
-  const lastWeight = loggedSets[loggedSets.length-1].weight ?? progEx.startWeight;
-  const rpe = avgRPE(loggedSets);
-  const highRpe = rpe!=null && rpe>8.5;
+  if(loggedSets.length===0) return {weight: progEx.startWeight, badge:'new', note:'No data yet'};
   const allAtTop = loggedSets.length>=progEx.sets && loggedSets.every(s=>s.reps>=hi);
-  const anyBelowLo = loggedSets.some(s=>s.reps<lo);
-  let badge, weight;
-
-  if(plateaued && !allAtTop){
-    badge = 'plateau'; weight = lastWeight;
-    notes.push('Stalled for several sessions — try a deload, a rep-range change, or extra rest');
-  } else if(allAtTop && !highRpe){
+  const lastWeight = loggedSets[loggedSets.length-1].weight ?? progEx.startWeight;
+  if(allAtTop){
     const inc = isLower(progEx.name) ? state.settings.incLower : state.settings.incUpper;
-    const bump = (rpe!=null && rpe<=7) ? inc*1.5 : inc;
-    weight = lastWeight + bump; badge = 'up';
-    notes.push(`Hit ${hi}+ reps all sets${rpe!=null?` @RPE ${rpe.toFixed(1)}`:''} — add weight`);
-  } else if(allAtTop){
-    weight = lastWeight; badge = 'hold';
-    notes.push(`Reps hit but RPE ${rpe.toFixed(1)} was high — repeat and consolidate`);
-  } else if(rpe!=null && rpe>=9.5){
-    weight = lastWeight; badge = 'hold';
-    notes.push(`RPE ${rpe.toFixed(1)} — too heavy, repeat weight`);
-  } else if(anyBelowLo){
-    weight = lastWeight; badge = 'hold';
-    notes.push('Below target reps last time — repeat weight');
-  } else {
-    weight = lastWeight; badge = 'hold';
-    notes.push(`Push for ${hi} reps to earn a weight jump`);
+    return {weight: Math.round((lastWeight+inc)*10)/10, badge:'up', note:`Hit ${hi}+ reps all sets last time — add weight`};
   }
-
-  weight = applyModifiers(weight);
-  return {weight, badge, note: notes.join(' · '), plateaued};
+  const anyBelowLo = loggedSets.some(s=>s.reps<lo);
+  if(anyBelowLo) return {weight: lastWeight, badge:'hold', note:`Below target reps last time — repeat weight`};
+  return {weight: lastWeight, badge:'hold', note:`Push for ${hi} reps to earn a weight jump`};
 }
 
 /* ---------------- Draft (in-progress workout) helpers ---------------- */
 function getDraftDay(day){ if(!state.draft[day]) state.draft[day] = {}; return state.draft[day]; }
 function getDraftEx(day, exName, defaultSetCount){
   const dd = getDraftDay(day);
-  if(!dd[exName]) dd[exName] = { sets: Array.from({length:defaultSetCount}, ()=>({weight:null, reps:null, rpe:null})) };
+  if(!dd[exName]) dd[exName] = { sets: Array.from({length:defaultSetCount}, ()=>({weight:null, reps:null})) };
   return dd[exName];
 }
 
@@ -896,22 +533,20 @@ function renderWorkoutBody(){
 
     const head = document.createElement('div');
     head.className = 'card-head';
-    const warmup = (!progEx.isTimed && sugg.weight>=20) ? warmupSets(sugg.weight) : [];
     head.innerHTML = `
       <div>
         <div class="ex-name">${progEx.name}</div>
         <div class="ex-meta">${progEx.sets} sets × ${progEx.repRange[0]}-${progEx.repRange[1]} ${progEx.isTimed?'sec':'reps'}
           ${last? ' · last: '+fmtDate(last.session.date) : ''}</div>
         <div class="ex-target">Suggested: ${sugg.weight}${progEx.isTimed?'':'kg'} — ${sugg.note}</div>
-        ${warmup.length? `<div class="warmup-line">Warm-up: ${warmup.map(w=>`${w.weight}×${w.reps}`).join(' → ')} → ${sugg.weight} work</div>` : ''}
       </div>
-      <span class="badge ${sugg.badge}">${sugg.badge==='up'?'↑ Add weight':sugg.badge==='new'?'New':sugg.badge==='plateau'?'⚠ Plateau':'Hold'}</span>
+      <span class="badge ${sugg.badge}">${sugg.badge==='up'?'↑ Add weight':sugg.badge==='new'?'New':'Hold'}</span>
     `;
     card.appendChild(head);
 
     const table = document.createElement('table');
     table.className = 'sets';
-    table.innerHTML = `<tr><th style="width:15%">Set</th><th>Kg${progEx.isTimed?' (n/a)':''}</th><th>${progEx.isTimed?'Sec':'Reps'}</th><th style="width:17%">RPE</th><th style="width:10%"></th></tr>`;
+    table.innerHTML = `<tr><th style="width:20%">Set</th><th>Kg${progEx.isTimed?' (n/a)':''}</th><th>${progEx.isTimed?'Sec':'Reps'}</th><th style="width:14%"></th></tr>`;
     draftEx.sets.forEach((st, si)=>{
       const prevSet = last && last.ex.sets[si] ? last.ex.sets[si] : null;
       const tr = document.createElement('tr');
@@ -919,12 +554,10 @@ function renderWorkoutBody(){
         <td><span class="set-num">${si+1}</span>${prevSet?`<span class="prev-hint">prev ${prevSet.weight??0}${progEx.isTimed?'s':'kg'}×${prevSet.reps??'-'}</span>`:''}</td>
         <td><input class="set-input weight-input" type="number" inputmode="decimal" placeholder="${sugg.weight}" value="${st.weight??''}" ${progEx.isTimed?'disabled':''} id="w-${type}-${exIdx}-${si}"></td>
         <td><input class="set-input reps-input" type="number" inputmode="numeric" placeholder="${prevSet?prevSet.reps??'':''}" value="${st.reps??''}" id="r-${type}-${exIdx}-${si}"></td>
-        <td><input class="set-input rpe-input" type="number" inputmode="decimal" step="0.5" min="5" max="10" placeholder="–" value="${st.rpe??''}" id="rpe-${type}-${exIdx}-${si}"></td>
         <td>${draftEx.sets.length>1?'<button class="rm-set">✕</button>':''}</td>
       `;
       const wInput = tr.querySelector('.weight-input');
       const rInput = tr.querySelector('.reps-input');
-      const rpeInput = tr.querySelector('.rpe-input');
       function markDone(){
         const filled = (progEx.isTimed || wInput.value!=='') && rInput.value!=='';
         wInput.classList.toggle('done', filled);
@@ -938,7 +571,6 @@ function renderWorkoutBody(){
         const nowFilled = (progEx.isTimed || wInput.value!=='') && st.reps!=null;
         if(nowFilled && !wasFilled) startRest(progEx.name, restSecondsFor(progEx));
       });
-      rpeInput.addEventListener('input', ()=>{ st.rpe = rpeInput.value===''?null:parseFloat(rpeInput.value); saveState(); });
       markDone();
       const rm = tr.querySelector('.rm-set');
       if(rm) rm.onclick = ()=>{ draftEx.sets.splice(si,1); saveState(); renderAll(); };
@@ -948,10 +580,9 @@ function renderWorkoutBody(){
 
     const actions = document.createElement('div');
     actions.className = 'row-actions';
-    actions.innerHTML = `<button class="btn-sm">+ Set</button><button class="btn-sm">🔄 Swap</button><button class="btn-sm accent">Remove</button>`;
-    actions.children[0].onclick = ()=>{ draftEx.sets.push({weight: sugg.weight, reps:null, rpe:null}); saveState(); renderAll(); };
-    actions.children[1].onclick = ()=> openSubstituteModal(exIdx);
-    actions.children[2].onclick = ()=>{
+    actions.innerHTML = `<button class="btn-sm">+ Add set</button><button class="btn-sm accent">Remove exercise</button>`;
+    actions.children[0].onclick = ()=>{ draftEx.sets.push({weight: sugg.weight, reps:null}); saveState(); renderAll(); };
+    actions.children[1].onclick = ()=>{
       confirmModal("Remove exercise?", `Remove "${progEx.name}" from ${TYPE_LABEL[type]}?`, "Remove", ()=>{
         state.program[type].splice(exIdx,1);
         delete getDraftDay(currentDay)[progEx.name];
@@ -971,27 +602,6 @@ function collectDraftForFinish(){
   }).filter(e=>e.sets.length>0);
 }
 
-// Updates each exercise's PR record (top weight / estimated 1RM / session volume) and
-// returns human-readable strings for any bests that were just broken, for the finish toast.
-function updatePRsAndCollect(exercises){
-  const newPRs = [];
-  exercises.forEach(e=>{
-    if(!state.prs[e.name]) state.prs[e.name] = {};
-    const rec = state.prs[e.name];
-    const topWeight = Math.max(0, ...e.sets.map(s=>s.weight||0));
-    const e1rm = bestE1RMInSets(e.sets);
-    const vol = e.sets.reduce((a,s)=>a+(s.weight||0)*(s.reps||0),0);
-    const now = new Date().toISOString();
-    if(topWeight>0 && (!rec.bestWeight || topWeight>rec.bestWeight.value)){
-      rec.bestWeight = {value:topWeight, date:now};
-      newPRs.push(`${e.name} ${topWeight}${e.isTimed?'s':'kg'}`);
-    }
-    if(!rec.bestE1RM || e1rm>rec.bestE1RM.value) rec.bestE1RM = {value:e1rm, date:now};
-    if(!rec.bestVolume || vol>rec.bestVolume.value) rec.bestVolume = {value:vol, date:now};
-  });
-  return newPRs;
-}
-
 function finishWorkout(){
   const exercises = collectDraftForFinish();
   if(exercises.length===0){ showToast("Log at least one set first"); return; }
@@ -1002,15 +612,10 @@ function finishWorkout(){
   }
   const session = { id: uid(), date: new Date().toISOString(), type: DAY_TYPE[currentDay], day: currentDay, exercises, durationMin };
   state.sessions.push(session);
-  const newPRs = updatePRsAndCollect(exercises);
   delete state.draft[currentDay];
   saveState();
   hideRest();
-  if(newPRs.length){
-    showToast(`🏆 New PR: ${newPRs[0]}${newPRs.length>1?` +${newPRs.length-1} more`:''}`);
-  } else {
-    showToast(durationMin ? `Workout saved — ${durationMin} min` : "Workout saved");
-  }
+  showToast(durationMin ? `Workout saved — ${durationMin} min` : "Workout saved");
   renderAll();
 }
 
@@ -1020,50 +625,10 @@ function sessionElapsedMs(){
   if(!s) return 0;
   return s.accumMs + (s.running ? Date.now()-s.startTs : 0);
 }
-function startWorkoutTimer(readiness){
-  state.activeSession = { day: currentDay, type: DAY_TYPE[currentDay], startTs: Date.now(), accumMs: 0, running: true, readiness: readiness||null };
+function startWorkoutTimer(){
+  state.activeSession = { day: currentDay, type: DAY_TYPE[currentDay], startTs: Date.now(), accumMs: 0, running: true };
   saveState();
   renderAll();
-  if(readiness && readiness.mult<1) showToast(`Check-in noted — today's suggestions trimmed ${Math.round((1-readiness.mult)*100)}%`);
-}
-
-// Quick 3-question check-in (sleep/soreness/energy) shown before starting a session; feeds
-// a small intensity discount into getSuggestion() so a rough day doesn't get today's normal load.
-function openReadinessModal(){
-  const sel = {sleep:3, soreness:3, energy:3};
-  const optionsRow = (key,label)=> `
-    <label>${label}</label>
-    <div class="opt-row" data-key="${key}">
-      ${[1,2,3,4,5].map(v=>`<button type="button" class="opt-btn${v===3?' selected':''}" data-val="${v}">${v}</button>`).join('')}
-    </div>`;
-  openModal(`
-    <h3>Quick Check-In</h3>
-    <div style="font-size:12px;color:var(--text-dim);margin-bottom:4px;">1 = poor, 5 = great. Helps today's weights match how you actually feel.</div>
-    ${optionsRow('sleep','Sleep quality')}
-    ${optionsRow('soreness','Freshness (5 = no soreness)')}
-    ${optionsRow('energy','Energy / motivation')}
-    <div class="modal-actions">
-      <button class="cancel" id="mSkip">Skip</button>
-      <button class="save" id="mGo">Start Workout</button>
-    </div>
-  `);
-  document.querySelectorAll('#modalContent .opt-row').forEach(row=>{
-    row.addEventListener('click', e=>{
-      const btn = e.target.closest('.opt-btn'); if(!btn) return;
-      row.querySelectorAll('.opt-btn').forEach(b=>b.classList.remove('selected'));
-      btn.classList.add('selected');
-      sel[row.dataset.key] = parseInt(btn.dataset.val);
-    });
-  });
-  document.getElementById('mSkip').onclick = ()=>{ closeModal(); startWorkoutTimer(null); };
-  document.getElementById('mGo').onclick = ()=>{
-    const score = (sel.sleep+sel.soreness+sel.energy)/3;
-    let mult = 1;
-    if(score<=2) mult = 0.90;
-    else if(score<=2.8) mult = 0.95;
-    closeModal();
-    startWorkoutTimer({sleep:sel.sleep, soreness:sel.soreness, energy:sel.energy, score, mult});
-  };
 }
 function pauseResumeTimer(){
   const s = state.activeSession; if(!s) return;
@@ -1088,120 +653,6 @@ function cancelWorkout(){
   );
 }
 
-/* ---------------- Deload & coaching intelligence ---------------- */
-function weeksSince(dateIso){
-  if(!dateIso) return Infinity;
-  return (Date.now()-new Date(dateIso).getTime())/(7*86400000);
-}
-function exerciseMuscle(name){
-  for(const list of Object.values(state.program)){
-    const found = list.find(e=>e.name===name);
-    if(found && found.muscle) return found.muscle;
-  }
-  return null;
-}
-function allProgramExerciseNames(){
-  const names = new Set();
-  Object.values(state.program).forEach(list=>list.forEach(e=>names.add(e.name)));
-  return [...names];
-}
-function plateauCount(){
-  return allProgramExerciseNames().filter(n=>detectPlateau(n)).length;
-}
-function deloadRecommended(){
-  if(state.deload.active) return false;
-  if(plateauCount()>=2) return true;
-  if(state.sessions.length>=12 && weeksSince(state.lastDeloadDate)>=6) return true;
-  return false;
-}
-function startDeloadWeek(){
-  state.deload = { active:true, startDate: new Date().toISOString() };
-  saveState(); renderAll();
-  showToast('Deload week started — intensity trimmed 10%');
-}
-function endDeloadWeek(){
-  state.deload = { active:false, startDate:null };
-  state.lastDeloadDate = new Date().toISOString();
-  saveState(); renderAll();
-  showToast('Deload week ended — back to normal training');
-}
-function checkDeloadExpiry(){
-  if(state.deload && state.deload.active && weeksSince(state.deload.startDate)>=1){
-    state.lastDeloadDate = state.deload.startDate;
-    state.deload = { active:false, startDate:null };
-    saveState();
-  }
-}
-function computeStreak(){
-  let streak = 0;
-  const trainDates = new Set(state.sessions.map(s=> new Date(s.date).toDateString()));
-  let cursor = new Date();
-  for(let i=0;i<60;i++){
-    const dname = DAYS[cursor.getDay()===0?6:cursor.getDay()-1];
-    if(TRAIN_DAYS.includes(dname)){
-      if(trainDates.has(cursor.toDateString())) streak++;
-      else if(cursor.toDateString()!==new Date().toDateString()) break;
-    }
-    cursor.setDate(cursor.getDate()-1);
-  }
-  return streak;
-}
-function weeklySetsByMuscle(){
-  const totals = {};
-  Object.keys(VOLUME_LANDMARKS).forEach(m=>totals[m]=0);
-  const cutoff = Date.now()-7*86400000;
-  state.sessions.forEach(s=>{
-    if(new Date(s.date).getTime()<cutoff) return;
-    s.exercises.forEach(e=>{
-      const muscle = exerciseMuscle(e.name);
-      if(!muscle || !(muscle in totals)) return;
-      totals[muscle] += e.sets.filter(st=>st.reps!=null).length;
-    });
-  });
-  return totals;
-}
-// Auto-generated coaching notes: plateaus, under/over-trained muscle groups (vs MEV/MRV),
-// training frequency gaps, streaks, and recent PRs. Pure function over current state — no ML, just rules.
-function generateInsights(){
-  const out = [];
-  if(state.deload.active) return out;
-  allProgramExerciseNames().forEach(n=>{
-    if(detectPlateau(n)) out.push({type:'warn', text:`${n} has stalled for a few sessions — consider a deload, a rep-range change, or extra rest before it.`});
-  });
-  const vol = weeklySetsByMuscle();
-  Object.entries(VOLUME_LANDMARKS).forEach(([m,land])=>{
-    const v = vol[m]||0;
-    if(v>0 && v<land.mev) out.push({type:'warn', text:`${MUSCLE_LABEL[m]} is under-trained this week (${v}/${land.mev} MEV sets) — add a set or two.`});
-    if(v>land.mrv) out.push({type:'warn', text:`${MUSCLE_LABEL[m]} volume this week (${v} sets) is above MRV (${land.mrv}) — watch fatigue.`});
-  });
-  TRAIN_DAYS.forEach(day=>{
-    const type = DAY_TYPE[day];
-    const lastSess = [...state.sessions].reverse().find(s=>s.type===type);
-    const daysSince = lastSess ? (Date.now()-new Date(lastSess.date))/86400000 : Infinity;
-    if(daysSince>10) out.push({type:'warn', text:`It's been ${Math.floor(daysSince)} days since your last ${TYPE_LABEL[type]} — get back on track.`});
-  });
-  const streak = computeStreak();
-  if(streak>=4) out.push({type:'good', text:`${streak}-session streak — strong consistency, keep it going.`});
-  const weekPRs = Object.values(state.prs||{}).filter(pr=> pr.bestWeight && (Date.now()-new Date(pr.bestWeight.date))/86400000<=7);
-  if(weekPRs.length) out.push({type:'good', text:`${weekPRs.length} new PR${weekPRs.length>1?'s':''} this week — nice work.`});
-  return out;
-}
-function renderCoachBanner(){
-  const el = document.getElementById('coachBanner');
-  if(!el) return;
-  if(state.deload.active){
-    const daysLeft = Math.max(0, Math.ceil(7 - weeksSince(state.deload.startDate)*7));
-    el.innerHTML = `<div class="coach-banner deload"><div><strong>Deload Week</strong> — intensity trimmed 10% · ${daysLeft}d left</div><button id="endDeloadBtn">End early</button></div>`;
-    document.getElementById('endDeloadBtn').onclick = endDeloadWeek;
-  } else if(deloadRecommended()){
-    el.innerHTML = `<div class="coach-banner warn"><div><strong>Deload recommended</strong> — multiple lifts have stalled</div><button id="startDeloadBtn">Start deload</button></div>`;
-    document.getElementById('startDeloadBtn').onclick = ()=> confirmModal('Start deload week?','For 7 days, suggested weights drop 10% to help you recover and break through the plateau.','Start deload', startDeloadWeek);
-  } else {
-    const insights = generateInsights();
-    el.innerHTML = insights.length ? `<div class="coach-banner ${insights[0].type}"><div>${insights[0].text}</div></div>` : '';
-  }
-}
-
 function renderTimerCard(){
   const el = document.getElementById('timerCard');
   const s = state.activeSession;
@@ -1218,7 +669,7 @@ function renderTimerCard(){
         </div>
       </div>
       <div class="timer-bar"><div class="timer-bar-fill" id="timerBarFill" style="width:${pct}%"></div></div>
-      <div class="timer-sub">Target ${TARGET_MIN}–${TARGET_MAX} min · ${TYPE_LABEL[s.type]}${s.readiness ? ' · ' + (s.readiness.mult<1 ? `Reduced intensity (-${Math.round((1-s.readiness.mult)*100)}%)` : 'Normal intensity') : ''}</div>
+      <div class="timer-sub">Target ${TARGET_MIN}–${TARGET_MAX} min · ${TYPE_LABEL[s.type]}</div>
     </div>
   `;
   document.getElementById('timerPauseBtn').onclick = pauseResumeTimer;
@@ -1241,7 +692,7 @@ function renderCta(){
   const s = state.activeSession;
   if(!s){
     el.innerHTML = `<div class="start-block"><div class="est">Aim for a ${TARGET_MIN}–${TARGET_MAX} min session</div><button id="startBtn">Start Workout</button></div>`;
-    document.getElementById('startBtn').onclick = openReadinessModal;
+    document.getElementById('startBtn').onclick = startWorkoutTimer;
   } else if(s.day===currentDay){
     el.innerHTML = `<button id="finishBtn">Finish Workout</button>`;
     document.getElementById('finishBtn').onclick = finishWorkout;
@@ -1315,7 +766,7 @@ function openSessionModal(s){
       <div style="margin-bottom:12px;">
         <div style="font-weight:700;font-size:14px;margin-bottom:4px;">${e.name}</div>
         <div style="font-size:12.5px;color:var(--text-dim);">
-          ${e.sets.map(st=>`${st.weight??0}${e.isTimed?'s':'kg'} × ${st.reps}${st.rpe?` @${st.rpe}`:''}`).join('&nbsp;&nbsp;·&nbsp;&nbsp;')}
+          ${e.sets.map(st=>`${st.weight??0}${e.isTimed?'s':'kg'} × ${st.reps}`).join('&nbsp;&nbsp;·&nbsp;&nbsp;')}
         </div>
       </div>
     `).join('')}
@@ -1346,7 +797,17 @@ function renderStatGrid(){
   const totalSessions = state.sessions.length;
   const last7 = state.sessions.filter(s=> (Date.now()-new Date(s.date))/86400000 <= 7).length;
   const totalVolume = state.sessions.reduce((a,s)=>a+sessionVolume(s),0);
-  const streak = computeStreak();
+  let streak = 0;
+  const trainDates = new Set(state.sessions.map(s=> new Date(s.date).toDateString()));
+  let cursor = new Date();
+  for(let i=0;i<60;i++){
+    const dname = DAYS[cursor.getDay()===0?6:cursor.getDay()-1];
+    if(TRAIN_DAYS.includes(dname)){
+      if(trainDates.has(cursor.toDateString())) streak++;
+      else if(cursor.toDateString()!==new Date().toDateString()) break;
+    }
+    cursor.setDate(cursor.getDate()-1);
+  }
   grid.innerHTML = `
     <div class="stat-card"><div class="v">${totalSessions}</div><div class="l">Total sessions</div></div>
     <div class="stat-card"><div class="v">${last7}</div><div class="l">Sessions (7 days)</div></div>
@@ -1397,38 +858,8 @@ function drawLineChart(canvas, points, colorVar){
   });
 }
 
-function renderInsightsList(){
-  const el = document.getElementById('insightsList');
-  const insights = generateInsights();
-  el.innerHTML = insights.length
-    ? insights.map(i=>`<div class="coach-banner ${i.type}" style="margin-bottom:8px;"><div>${i.text}</div></div>`).join('')
-    : '<div class="empty" style="padding:16px 0;">No coaching flags right now — everything on track.</div>';
-}
-function renderVolumeBars(){
-  const el = document.getElementById('volumeBars');
-  const vol = weeklySetsByMuscle();
-  el.innerHTML = Object.entries(VOLUME_LANDMARKS).map(([m,land])=>{
-    const v = vol[m]||0;
-    const pct = Math.min(100, (v/land.mrv)*100);
-    const mevPct = (land.mev/land.mrv)*100;
-    const mavPct = (land.mav/land.mrv)*100;
-    const zone = v<land.mev ? 'under' : v<=land.mrv ? 'ok' : 'over';
-    return `
-      <div class="vol-row">
-        <div class="vol-label"><span>${MUSCLE_LABEL[m]}</span><span class="vol-count">${v} sets (MEV ${land.mev} · MAV ${land.mav} · MRV ${land.mrv})</span></div>
-        <div class="vol-track">
-          <div class="vol-zone-mav" style="left:${mevPct}%; width:${Math.max(0,mavPct-mevPct)}%"></div>
-          <div class="vol-marker" style="left:${mevPct}%"></div>
-          <div class="vol-fill ${zone}" style="width:${pct}%"></div>
-        </div>
-      </div>`;
-  }).join('');
-}
-
 function renderProgress(){
   renderStatGrid();
-  renderInsightsList();
-  renderVolumeBars();
   populateProgExSelect();
   const sel = document.getElementById('progExSelect');
   const body = document.getElementById('progressBody');
@@ -1481,229 +912,6 @@ function renderProgress(){
   body.appendChild(recentList);
 }
 
-/* ---------------- Food Log ---------------- */
-let foodDate = new Date();
-function dateKey(d){ return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
-function shiftDate(d, days){ const nd = new Date(d); nd.setDate(nd.getDate()+days); return nd; }
-function dayLabel(d){
-  const key = dateKey(d);
-  if(key===dateKey(new Date())) return 'Today';
-  if(key===dateKey(shiftDate(new Date(),-1))) return 'Yesterday';
-  if(key===dateKey(shiftDate(new Date(),1))) return 'Tomorrow';
-  return d.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'});
-}
-function round1(n){ return Math.round(n*10)/10; }
-
-function ensureDayLog(key){
-  if(!state.nutrition.log[key]) state.nutrition.log[key] = { water:0, meals:{breakfast:[],lunch:[],dinner:[],snack:[]} };
-  return state.nutrition.log[key];
-}
-function getDayLog(key){
-  return state.nutrition.log[key] || { water:0, meals:{breakfast:[],lunch:[],dinner:[],snack:[]} };
-}
-function dayTotals(day){
-  let cal=0,p=0,c=0,f=0;
-  MEAL_TYPES.forEach(m=> day.meals[m].forEach(e=>{ cal+=e.calories; p+=e.protein; c+=e.carbs; f+=e.fat; }));
-  return {cal,p,c,f};
-}
-function addFoodEntry(key, meal, food, qty){
-  const day = ensureDayLog(key);
-  day.meals[meal].push({
-    id: uid(), name: food.name, servingLabel: food.serving, qty,
-    calories: Math.round(food.cal*qty), protein: round1(food.p*qty), carbs: round1(food.c*qty), fat: round1(food.f*qty)
-  });
-  saveState();
-  renderFood();
-}
-function removeFoodEntry(key, meal, entryId){
-  const day = state.nutrition.log[key]; if(!day) return;
-  day.meals[meal] = day.meals[meal].filter(e=>e.id!==entryId);
-  saveState(); renderFood();
-}
-function addWater(key, ml){
-  const day = ensureDayLog(key);
-  day.water = Math.max(0, day.water+ml);
-  saveState(); renderFood();
-}
-
-function pbarHtml(label, val, goal, unit, cls){
-  const pct = goal>0 ? Math.min(100,(val/goal)*100) : 0;
-  return `<div class="pbar-row">
-    <div class="pbar-label"><span>${label}</span><span class="sub">${Math.round(val)}${unit} / ${goal}${unit}</span></div>
-    <div class="pbar-track"><div class="pbar-fill ${cls}" style="width:${pct}%"></div></div>
-  </div>`;
-}
-
-function renderFoodDateNav(){
-  const el = document.getElementById('foodDateNav'); if(!el) return;
-  el.innerHTML = `<div class="day-nav"><button id="foodPrev">‹</button><div class="day-label">${dayLabel(foodDate)}</div><button id="foodNext">›</button></div>`;
-  document.getElementById('foodPrev').onclick = ()=>{ foodDate = shiftDate(foodDate,-1); renderFood(); };
-  document.getElementById('foodNext').onclick = ()=>{ foodDate = shiftDate(foodDate,1); renderFood(); };
-}
-
-function renderFoodSummary(){
-  const el = document.getElementById('foodSummary'); if(!el) return;
-  const key = dateKey(foodDate);
-  const day = getDayLog(key);
-  const t = dayTotals(day);
-  const g = state.nutrition.goals;
-  el.innerHTML = `
-    <div class="card">
-      ${pbarHtml('Calories', t.cal, g.calories, '', 'cal')}
-      ${pbarHtml('Protein', t.p, g.protein, 'g', 'protein')}
-      ${pbarHtml('Carbs', t.c, g.carbs, 'g', 'carbs')}
-      ${pbarHtml('Fat', t.f, g.fat, 'g', 'fat')}
-      ${pbarHtml('Water', day.water, g.water, 'ml', 'water')}
-      <div class="water-row">
-        <div style="font-size:11px;color:var(--text-dimmer);">Quick add water</div>
-        <div class="water-btns">
-          <button id="waterMinus">−250</button>
-          <button id="waterPlus250">+250</button>
-          <button id="waterPlus500">+500</button>
-        </div>
-      </div>
-    </div>`;
-  document.getElementById('waterMinus').onclick = ()=> addWater(key,-250);
-  document.getElementById('waterPlus250').onclick = ()=> addWater(key,250);
-  document.getElementById('waterPlus500').onclick = ()=> addWater(key,500);
-}
-
-function renderFoodMeals(){
-  const el = document.getElementById('foodMeals'); if(!el) return;
-  const key = dateKey(foodDate);
-  const day = getDayLog(key);
-  el.innerHTML = MEAL_TYPES.map(meal=>{
-    const entries = day.meals[meal];
-    const kcal = entries.reduce((a,e)=>a+e.calories,0);
-    return `
-      <div class="card meal-card">
-        <div class="meal-head"><span class="name">${MEAL_LABEL[meal]}</span><span class="kcal">${kcal} kcal</span></div>
-        ${entries.map(e=>`
-          <div class="meal-entry" data-id="${e.id}" data-meal="${meal}">
-            <div class="info"><div class="name">${e.name}</div><div class="meta">${e.qty}× ${e.servingLabel} · P${e.protein} C${e.carbs} F${e.fat}</div></div>
-            <div class="right"><span class="kcal-val">${e.calories}</span><button class="rm-set rm-food">✕</button></div>
-          </div>`).join('')}
-        <button class="meal-add" data-meal="${meal}">+ Add food</button>
-      </div>`;
-  }).join('');
-  el.querySelectorAll('.meal-add').forEach(btn=>{ btn.onclick = ()=> openFoodSearchModal(btn.dataset.meal, key); });
-  el.querySelectorAll('.rm-food').forEach(btn=>{
-    const row = btn.closest('.meal-entry');
-    btn.onclick = ()=> removeFoodEntry(key, row.dataset.meal, row.dataset.id);
-  });
-}
-
-function renderFoodTrend(){
-  const calCanvas = document.getElementById('foodTrendCal');
-  const pCanvas = document.getElementById('foodTrendProtein');
-  if(!calCanvas || !pCanvas) return;
-  const points = [];
-  for(let i=6;i>=0;i--){
-    const day = getDayLog(dateKey(shiftDate(new Date(), -i)));
-    points.push(dayTotals(day));
-  }
-  requestAnimationFrame(()=>{
-    drawLineChart(calCanvas, points.map(p=>({v:p.cal})), '--accent');
-    drawLineChart(pCanvas, points.map(p=>({v:p.p})), '--green');
-  });
-}
-
-function renderFood(){
-  if(!document.getElementById('view-food')) return;
-  renderFoodDateNav();
-  renderFoodSummary();
-  renderFoodMeals();
-  renderFoodTrend();
-}
-
-// Search-and-add modal for a meal slot: live-filters FOOD_DB by name and category,
-// lets you tweak quantity per row, and add multiple foods without closing the modal.
-function openFoodSearchModal(meal, key){
-  openModal(`
-    <h3>Add to ${MEAL_LABEL[meal]}</h3>
-    <input class="field" id="foodSearchInput" placeholder="Search foods… e.g. hummus, chicken, rice" autocomplete="off">
-    <div class="daychips" id="foodCatChips" style="padding:10px 0 2px;">
-      <button type="button" class="chip active" data-cat="all">All</button>
-      <button type="button" class="chip" data-cat="lebanese">Lebanese</button>
-      <button type="button" class="chip" data-cat="common">Common</button>
-    </div>
-    <div id="foodResults" style="max-height:40vh;overflow-y:auto;"></div>
-    <div class="modal-actions">
-      <button class="cancel" id="mCustom">+ Custom food</button>
-      <button class="save" id="mDone">Done</button>
-    </div>
-  `);
-  let activeCat = 'all';
-  function renderResults(){
-    const q = document.getElementById('foodSearchInput').value.trim().toLowerCase();
-    const list = FOOD_DB.filter(f=> (activeCat==='all'||f.cat===activeCat) && (!q || f.name.toLowerCase().includes(q))).slice(0,40);
-    const el = document.getElementById('foodResults');
-    el.innerHTML = list.length ? list.map(f=>`
-      <div class="food-row" data-id="${f.id}">
-        <div class="food-row-info">
-          <div class="food-row-name">${f.name}</div>
-          <div class="food-row-meta">${f.serving} · ${f.cal} kcal · P${f.p} C${f.c} F${f.f}</div>
-        </div>
-        <input type="number" class="food-qty" value="1" step="0.5" min="0.25">
-        <button class="food-add-btn" type="button">Add</button>
-      </div>`).join('') : '<div class="empty" style="padding:20px 0;">No matches — try Custom food below.</div>';
-    el.querySelectorAll('.food-row').forEach(row=>{
-      const food = FOOD_DB.find(f=>f.id===row.dataset.id);
-      row.querySelector('.food-add-btn').onclick = ()=>{
-        const qty = parseFloat(row.querySelector('.food-qty').value)||1;
-        addFoodEntry(key, meal, food, qty);
-        showToast(`Added ${food.name}`);
-      };
-    });
-  }
-  document.getElementById('foodSearchInput').addEventListener('input', renderResults);
-  document.querySelectorAll('#foodCatChips .chip').forEach(chip=>{
-    chip.onclick = ()=>{
-      document.querySelectorAll('#foodCatChips .chip').forEach(c=>c.classList.remove('active'));
-      chip.classList.add('active');
-      activeCat = chip.dataset.cat;
-      renderResults();
-    };
-  });
-  document.getElementById('mCustom').onclick = ()=> openCustomFoodModal(meal, key);
-  document.getElementById('mDone').onclick = closeModal;
-  renderResults();
-}
-
-function openCustomFoodModal(meal, key){
-  openModal(`
-    <h3>Custom Food — ${MEAL_LABEL[meal]}</h3>
-    <label>Name</label><input class="field" id="cfName" placeholder="e.g. Mom's kibbeh">
-    <label>Serving description</label><input class="field" id="cfServing" value="1 serving">
-    <label>Calories</label><input class="field" id="cfCal" type="number" value="0">
-    <label>Protein (g)</label><input class="field" id="cfP" type="number" step="0.1" value="0">
-    <label>Carbs (g)</label><input class="field" id="cfC" type="number" step="0.1" value="0">
-    <label>Fat (g)</label><input class="field" id="cfF" type="number" step="0.1" value="0">
-    <label>Quantity</label><input class="field" id="cfQty" type="number" step="0.5" value="1">
-    <div class="modal-actions">
-      <button class="cancel" id="mBack">Back to search</button>
-      <button class="save" id="mAdd">Add</button>
-    </div>
-  `);
-  document.getElementById('mBack').onclick = ()=> openFoodSearchModal(meal, key);
-  document.getElementById('mAdd').onclick = ()=>{
-    const name = document.getElementById('cfName').value.trim();
-    if(!name){ showToast('Name it first'); return; }
-    const food = {
-      name,
-      serving: document.getElementById('cfServing').value.trim()||'1 serving',
-      cal: parseFloat(document.getElementById('cfCal').value)||0,
-      p: parseFloat(document.getElementById('cfP').value)||0,
-      c: parseFloat(document.getElementById('cfC').value)||0,
-      f: parseFloat(document.getElementById('cfF').value)||0,
-    };
-    const qty = parseFloat(document.getElementById('cfQty').value)||1;
-    addFoodEntry(key, meal, food, qty);
-    showToast(`Added ${name}`);
-    openFoodSearchModal(meal, key);
-  };
-}
-
 /* ---------------- Modal ---------------- */
 function openModal(html){
   document.getElementById('modalContent').innerHTML = html;
@@ -1733,8 +941,6 @@ function openAddExerciseModal(){
     <h3>Add exercise — ${TYPE_LABEL[type]}</h3>
     <label>Exercise name</label>
     <input class="field" id="newExName" placeholder="e.g. Cable Fly">
-    <label>Muscle group</label>
-    <select class="field" id="newExMuscle">${Object.entries(MUSCLE_LABEL).map(([k,l])=>`<option value="${k}">${l}</option>`).join('')}</select>
     <label>Sets</label>
     <input class="field" id="newExSets" type="number" value="3">
     <label>Rep range (low)</label>
@@ -1753,46 +959,14 @@ function openAddExerciseModal(){
   document.getElementById('mSave').onclick = ()=>{
     const name = document.getElementById('newExName').value.trim();
     if(!name){ showToast("Name it first"); return; }
-    const muscle = document.getElementById('newExMuscle').value;
     const sets = parseInt(document.getElementById('newExSets').value)||3;
     const lo = parseInt(document.getElementById('newExLo').value)||8;
     const hi = parseInt(document.getElementById('newExHi').value)||12;
     const w = parseFloat(document.getElementById('newExW').value)||0;
-    state.program[type].push({name, sets, repRange:[lo,hi], startWeight:w, muscle});
+    state.program[type].push({name, sets, repRange:[lo,hi], startWeight:w});
     saveState(); closeModal(); renderAll();
     showToast("Exercise added");
   };
-}
-
-// "Swap" button on an exercise card: offers built-in alternatives targeting the same muscle
-// group (for injuries, missing equipment, or just variety) and replaces that program slot.
-function openSubstituteModal(exIdx){
-  const type = DAY_TYPE[currentDay];
-  const progEx = state.program[type][exIdx];
-  const muscle = progEx.muscle;
-  const alternatives = (ALT_EXERCISES[muscle]||[]).filter(a=> a.name!==progEx.name && !state.program[type].some(e=>e.name===a.name));
-  if(!alternatives.length){ showToast('No built-in alternatives for this exercise'); return; }
-  const html = `
-    <h3>Swap ${progEx.name}</h3>
-    <div style="font-size:12px;color:var(--text-dim);margin-bottom:10px;">Same muscle group${muscle?` (${MUSCLE_LABEL[muscle]})`:''} — your logged history for ${progEx.name} stays in History either way.</div>
-    ${alternatives.map((a,i)=>`
-      <div class="hist-item" style="cursor:pointer;" data-idx="${i}">
-        <div class="l"><div class="name">${a.name}</div><div class="date">${a.sets} sets × ${a.repRange[0]}-${a.repRange[1]} reps</div></div>
-        <div class="vol">→</div>
-      </div>`).join('')}
-    <div class="modal-actions"><button class="cancel" id="mCancel">Cancel</button></div>
-  `;
-  openModal(html);
-  document.getElementById('mCancel').onclick = closeModal;
-  document.querySelectorAll('#modalContent .hist-item').forEach(item=>{
-    item.onclick = ()=>{
-      const alt = alternatives[parseInt(item.dataset.idx)];
-      state.program[type][exIdx] = { name:alt.name, sets:alt.sets, repRange:alt.repRange, startWeight:alt.startWeight, muscle, isTimed: !!alt.isTimed };
-      delete getDraftDay(currentDay)[progEx.name];
-      saveState(); closeModal(); renderAll();
-      showToast(`Swapped in ${alt.name}`);
-    };
-  });
 }
 
 /* ---------------- Tabs ---------------- */
@@ -1802,7 +976,6 @@ function switchView(name){
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active', b.dataset.view===name));
   if(name==='history') renderHistory();
   if(name==='progress') renderProgress();
-  if(name==='food') renderFood();
   window.scrollTo(0,0);
 }
 document.querySelectorAll('.tab-btn').forEach(b=> b.onclick = ()=> switchView(b.dataset.view));
@@ -1816,11 +989,6 @@ document.getElementById('bwSaveBtn').onclick = ()=>{
 };
 document.getElementById('incUpper').addEventListener('change', e=>{ state.settings.incUpper = parseFloat(e.target.value)||2.5; saveState(); });
 document.getElementById('incLower').addEventListener('change', e=>{ state.settings.incLower = parseFloat(e.target.value)||5; saveState(); });
-document.getElementById('goalCal').addEventListener('change', e=>{ state.nutrition.goals.calories = parseFloat(e.target.value)||2200; saveState(); });
-document.getElementById('goalProtein').addEventListener('change', e=>{ state.nutrition.goals.protein = parseFloat(e.target.value)||150; saveState(); });
-document.getElementById('goalCarbs').addEventListener('change', e=>{ state.nutrition.goals.carbs = parseFloat(e.target.value)||220; saveState(); });
-document.getElementById('goalFat').addEventListener('change', e=>{ state.nutrition.goals.fat = parseFloat(e.target.value)||70; saveState(); });
-document.getElementById('goalWater').addEventListener('change', e=>{ state.nutrition.goals.water = parseFloat(e.target.value)||2500; saveState(); });
 document.getElementById('exportBtn').onclick = async ()=>{
   try{
     const downloads = window.__ironlogDownloads || (await (window.claude && window.claude.use ? window.claude.use("downloads") : null));
@@ -1875,26 +1043,19 @@ function renderHeader(){
 }
 
 function renderAll(){
-  checkDeloadExpiry();
   renderHeader();
-  renderCoachBanner();
   renderDayChips();
   renderTimerCard();
   renderWorkoutBody();
   renderCta();
   document.getElementById('incUpper').value = state.settings.incUpper;
   document.getElementById('incLower').value = state.settings.incLower;
-  document.getElementById('goalCal').value = state.nutrition.goals.calories;
-  document.getElementById('goalProtein').value = state.nutrition.goals.protein;
-  document.getElementById('goalCarbs').value = state.nutrition.goals.carbs;
-  document.getElementById('goalFat').value = state.nutrition.goals.fat;
-  document.getElementById('goalWater').value = state.nutrition.goals.water;
 }
 
 function start(savedData){
   if(savedData && savedData.state) state = savedData.state;
   renderAll();
-  if(programWasUpgraded){ saveState(); showToast("Program upgraded: smarter coaching engine online"); }
+  if(programWasUpgraded){ saveState(); showToast("Program upgraded: more volume, no deadlifts"); }
 }
 
 if(window.claude && window.claude.use){
